@@ -28,7 +28,7 @@ function App() {
     
   })
 
-  const [id, setId] = useState(0)
+
 
   const handleSubmit = async(e: SyntheticEvent<HTMLFormElement, SubmitEvent>) =>{
       e.preventDefault();
@@ -96,7 +96,6 @@ function App() {
   const handleAddAddress = () => {
     setEmployee({
       ...employee,
-      // id: setId(id+1), 
       addresses: [
         ...employee.addresses, 
         {
